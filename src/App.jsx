@@ -1,5 +1,5 @@
 import { useNavigate, Routes, Route } from "react-router-dom"; // Removed BrowserRouter import here
-import TripPlanner from "./TripPlanner";
+import TravelForm from "./TravelForm";
 import "./App.css";
 
 function Home() {
@@ -37,7 +37,7 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/plan" element={<TripPlanner />} />
+      <Route path="/plan" element={<TravelForm />} />
     </Routes>
   );
 }

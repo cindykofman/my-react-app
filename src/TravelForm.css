@@ -1,81 +1,86 @@
-.travel-form {
+/* Trip Planner Container */
+.trip-container {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
     max-width: 500px;
     margin: 50px auto;
-    padding: 30px;
-    border: 1px solid #ddd;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    font-family: 'Arial', sans-serif;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: white;
   }
   
-  .travel-form h1 {
-    text-align: center;
-    color: #444;
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
-  
-  .form-group {
+  /* Heading Styling */
+  h1 {
+    font-size: 2rem;
     margin-bottom: 20px;
+    color: white;
   }
   
-  .form-group label {
-    display: block;
-    margin-bottom: 8px;
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; /* Center form elements */
+  }
+  
+  /* Label Styling */
+  label {
     font-weight: bold;
-    color: #555;
-    font-size: 16px;
+    margin-top: 10px;
+    text-align: left; /* Align labels to the left */
+    width: 100%; /* Ensure the labels take the full width */
   }
-  
-  .form-group input {
+
+  .react-datepicker-wrapper {
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    font-size: 16px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
   }
   
-  .form-group input[type="date"] {
+  /* Input Styling */
+  input {
     padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%; /* Ensure inputs take the full width of the container */
   }
   
-  .form-group input:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  .form-group input[readonly] {
-    background-color: #e9e9e9;
-    cursor: not-allowed;
-  }
-  
+  /* Button Styling */
   button {
-    width: 100%;
-    padding: 15px;
-    background-color: #ff8c61; /* Peach color */
+    background-color: #ff9800;
     color: white;
     border: none;
-    border-radius: 8px;
-    font-size: 16px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin-top: 15px;
+    width: 100%; /* Make the button take the full width */
   }
   
   button:hover {
-    background-color: #f32d00; /* Darker peach on hover */
+    background-color: #e68900;
   }
   
-  button:active {
-    background-color: #da4827; /* Even darker peach on active state */
+  /* Back Button Styling */
+  .back-btn {
+    background-color: #ccc;
+    color: black;
   }
   
-  .travel-form p {
-    margin-top: 15px;
-    font-size: 16px;
-    color: #333;
+  .back-btn:hover {
+    background-color: #aaa;
+  }
+  
+  /* End Date Styling (Plain Text) */
+  #end-date {
+    font-size: 1rem;
+    color: white;
     text-align: center;
+    padding: 10px;
+    margin-top: 10px;
   }
   
